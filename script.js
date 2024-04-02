@@ -281,3 +281,19 @@ function drawIt() {
         y += dy;
       }
 }
+//timer
+var sekunde;
+var sekundeI;
+var minuteI;
+var intTimer;
+var izpisTimer;
+//timer
+function timer(){
+sekunde++;
+
+sekundeI = ((sekundeI = (sekunde % 60)) > 9) ? sekundeI : "0"+sekundeI;
+minuteI = ((minuteI = Math.floor(sekunde / 60)) > 9) ? minuteI : "0"+minuteI;
+izpisTimer = minuteI + ":" + sekundeI;
+
+$("#cas").html(izpisTimer);
+}
