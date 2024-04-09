@@ -45,6 +45,7 @@ function drawIt() {
     function clear() {
         ctx.clearRect(0, 0, WIDTH, HEIGHT);
     }
+
     //END LIBRARY CODE
     function draw() {
         clear();
@@ -52,6 +53,7 @@ function drawIt() {
         x += dx;
         y += dy;
     }
+
     function draw() {
         clear();
         circle(x, y, 10);
@@ -67,7 +69,6 @@ function drawIt() {
     var paddlex;
     var paddleh;
     var paddlew;
-
 
     function init_paddle() {
         paddlex = WIDTH / 2;
@@ -164,11 +165,11 @@ function drawIt() {
     var PADDING;
 
     function initbricks() { //inicializacija opek - polnjenje v tabelo
-        NROWS = 5;
-        NCOLS = 4;
-        BRICKWIDTH = (WIDTH / NCOLS) - 13;
-        BRICKHEIGHT = 45;
-        PADDING = 10;
+        NROWS = 10;
+        NCOLS = 8;
+        BRICKWIDTH = (WIDTH / NCOLS) - 2.3;
+        BRICKHEIGHT = 25;
+        PADDING = 2;
         bricks = new Array(NROWS);
         for (i = 0; i < NROWS; i++) {
             bricks[i] = new Array(NCOLS);
