@@ -1,5 +1,5 @@
 body{
-    background-image: url(slike/b&w1.png);
+    background-image: url(b&w1.png);
 }
 
 #canvas{
@@ -26,4 +26,11 @@ button{
 	color: black;
 	opacity: 0.9;
 	font-size: 20px;
+}
+
+#play{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }

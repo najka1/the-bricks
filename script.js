@@ -4,11 +4,12 @@ function draw() {
     var ctx = canvas.getContext("2d");
 
 
-
     ctx.beginPath();
     ctx.arc(75, 75, 10, 0, Math.PI * 2, true);
     ctx.closePath();
     ctx.fill();
+	
+	const lego = document.getElementById("lego");
 }
 function drawIt() {
     var x = 350;
@@ -81,6 +82,8 @@ function drawIt() {
         circle(x, y, 10);
         rect(paddlex, HEIGHT - paddleh, paddlew, paddleh);
 
+
+		
         if (x + dx > WIDTH - r || x + dx < 0 + r)
             dx = -dx;
 
