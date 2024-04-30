@@ -1,3 +1,8 @@
+var audio = new Audio('song.mp3');
+audio.volume=0.05;
+            document.addEventListener("click", (event) => {
+            audio.play();
+            })
 
 function draw() {
     var canvas = document.getElementById("canvas");
@@ -13,8 +18,8 @@ function draw() {
 
     var score = 3;
   function drawIt() {
-    var x = 150;
-    var y = 250;
+    var x = 250;
+    var y = 450;
     var dx = 2;
     var dy = 4;
     var WIDTH;
@@ -59,7 +64,7 @@ function draw() {
         ctx.beginPath();
         ctx.arc(x, y, r, 0, Math.PI * 2, true);
         ctx.closePath();
-        ctx.fillStyle = "#FF3333";
+        ctx.fillStyle = "#000000";
         ctx.fill();
     }
   
@@ -200,10 +205,10 @@ function draw() {
     var PADDING;
   
     function initbricks() { //inicializacija opek - polnjenje v tabelo
-        NROWS = 5;
+        NROWS = 8;
         NCOLS = 5;
         BRICKWIDTH = (WIDTH / NCOLS) - 1;
-        BRICKHEIGHT = 30;
+        BRICKHEIGHT = 50;
         PADDING = 2;
         bricks = new Array(NROWS);
         for (i = 0; i < NROWS; i++) {
@@ -352,7 +357,7 @@ function draw() {
 						title: "UNLUCKY",
 						text: "You didn't destroy all the bricks.",
 						icon: "info",
-						confirmButtonText: "Try again",
+						confirmButtonText: "Retry",
 						confirmButtonColor: "#FF3333",
 						customClass: {
 							icon: "custom-icon-color",
