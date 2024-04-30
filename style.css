@@ -1,5 +1,5 @@
 body{
-    background-image: url(b&w1.png);
+    background-image: url(slike/b&w1.png);
 }
 
 #canvas{
@@ -14,7 +14,6 @@ body{
 
 #canvas2{
     height: 100px;
-	padding-top: 20px;
     margin: 0 auto;
 	text-align: center;
 }
