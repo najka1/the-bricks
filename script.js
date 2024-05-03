@@ -1,3 +1,8 @@
+var audio = new Audio('song.mp3');
+ audio.volume=0.05;
+            document.addEventListener("click", (event) => {
+           audio.play();
+           })
 
   var x = 250;
   var y = 350;
